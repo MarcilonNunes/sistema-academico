@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faculdade Vencer - Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Faculdade Vencer - Dashboard</h1>
+    <button id="logoutBtn">Sair</button>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="alunos.html">Alunos</a></li>
+        <li><a href="professores.html">Professores</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="notas.html">Notas</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="stats">
+        <div class="card">
+            <h3>Total de Alunos</h3>
+            <p id="totalAlunos">0</p>
+        </div>
+        <div class="card">
+            <h3>Total de Professores</h3>
+            <p id="totalProfessores">0</p>
+        </div>
+        <div class="card">
+            <h3>Total de Cursos</h3>
+            <p id="totalCursos">0</p>
+        </div>
+    </section>
+</main>
+
+<script src="js/main.js"></script>
+<script>
+    // Protege a página
+    protegerPagina();
+
+    // Pega dados do LocalStorage
+    const alunos = JSON.parse(localStorage.getItem('alunos')) || [];
+    const professores = JSON.parse(localStorage.getItem('professores')) || [];
+    const cursos = JSON.parse(localStorage.getItem('cursos')) || [];
+
+    // Atualiza cards
+    document.getElementById('totalAlunos').textContent = alunos.length;
+    document.getElementById('totalProfessores').textContent = professores.length;
+    document.getElementById('totalCursos').textContent = cursos.length;
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faculdade Vencer - Alunos</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>Faculdade Vencer - Alunos</h1>
+    <button id="logoutBtn">Sair</button>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="alunos.html">Alunos</a></li>
+        <li><a href="professores.html">Professores</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="notas.html">Notas</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="form-section">
+        <h2>Cadastro de Aluno</h2>
+        <form id="alunoForm">
+            <input type="hidden" id="alunoId">
+            <input type="text" id="nome" placeholder="Nome completo" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="date" id="nascimento" placeholder="Data de nascimento" required>
+            <select id="curso" required>
+                <option value="">Selecione o curso</option>
+            </select>
+            <button type="submit">Salvar</button>
+        </form>
+    </section>
+
+    <section class="list-section">
+        <h2>Lista de Alunos</h2>
+        <input type="text" id="searchAluno" placeholder="Pesquisar aluno">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Nascimento</th>
+                    <th>Curso</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="alunoTable">
+                <!-- Alunos aparecerão aqui -->
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/alunos.js"></script>
+</body>
+</html>

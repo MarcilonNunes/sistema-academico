@@ -1,0 +1,288 @@
+/* ===== Reset e fonte ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6fa;
+    color: #333;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 22px;
+}
+
+header button {
+    background-color: #ff9900;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* ===== Navbar ===== */
+nav {
+    background-color: #0055a5;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0 20px;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 8px;
+    display: block;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #004080;
+    border-radius: 5px;
+}
+
+/* ===== Main ===== */
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== Formulários ===== */
+.form-section {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+form input, form select, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+form input, form select, form textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+form button {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0055a5;
+}
+
+/* ===== Listagem / Tabelas ===== */
+.list-section {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.list-section h2 {
+    margin-bottom: 15px;
+    color: #003366;
+}
+
+.list-section input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+table thead {
+    background-color: #003366;
+    color: #fff;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+table button:hover {
+    opacity: 0.8;
+}
+
+table button:first-child {
+    background-color: #ff9900; /* Editar */
+    color: #fff;
+}
+
+table button:last-child {
+    background-color: #cc0000; /* Excluir */
+    color: #fff;
+}
+
+/* ===== Dashboard Cards ===== */
+.stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ===== Login ===== */
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-container .logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.login-container h1 {
+    margin-bottom: 25px;
+    color: #003366;
+}
+
+.login-container input {
+    padding: 12px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.login-container button {
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #003366;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-container button:hover {
+    background-color: #0055a5;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .stats {
+        flex-direction: column;
+    }
+    table th, table td {
+        font-size: 13px;
+    }
+}
